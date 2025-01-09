@@ -7,5 +7,8 @@ class Character:
         target_e_health = target.e_health
         new_helth = target_e_health - self.damage
         target.e_health = new_helth
+        mynewhealth = self.health - target.e_damage
+        self.health = mynewhealth
         print(f"{self.name} attacked {target.e_name}")
         print(f"{target.e_name} now has {target.e_health} health")
+        print(f"{self.name} now has {self.health} health")
