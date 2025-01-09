@@ -23,12 +23,12 @@ def battle():
     player.attack(enemy)
     time.sleep(0.5)
     print("--------------------------------------------------------------------------------------------------")
-    #Rooms
-battle()
-if enemy.e_health <= 0:
-    print("You win")
-elif player.health <=0:
-    print("You lose")
-
-else:
+# Main battle loop
+while True:
     battle()
+    if enemy.e_health <= 0:
+        print("You win")
+        break
+    elif player.health <= 0:
+        print("You lose")
+        break
