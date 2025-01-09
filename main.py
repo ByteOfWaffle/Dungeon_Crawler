@@ -10,6 +10,12 @@ enemy = Enemy("Skibidi grunt", 100, "Bite", 10)
 
 def battle():
     os.system("cls")
+    print("1. Thrust")
+    print("2. Slash")
+    print("3. Bonk")
+    choice = input("What attack will you use?")
+    if choice = 1
+    
     print("--------------------------------------------------------------------------------------------------")
     print(player.name)
     time.sleep(1)
