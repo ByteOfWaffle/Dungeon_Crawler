@@ -24,11 +24,11 @@ def battle():
     time.sleep(0.5)
     print("--------------------------------------------------------------------------------------------------")
 # Main battle loop
-while True:
+while True: #loops
     battle()
     if enemy.e_health <= 0:
         print("You win")
-        break
+        break #Break ends loop
     elif player.health <= 0:
         print("You lose")
         break
